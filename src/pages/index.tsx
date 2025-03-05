@@ -8,9 +8,9 @@ export default function Home() {
         <Layout title="Co-Driver" description="Comprehensive guides, API references, and SDK documentation">
             <header className={styles.heroBanner}>
                 <div className="container">
-                    <h1 className="hero__title">Welcome to API Management Docs</h1>
+                    <h1 className="hero__title">Welcome to Co-Driver Documentation</h1>
                     <p className="hero__subtitle">
-                        Your go-to platform for managing APIs, subscriptions, and analytics.
+                        API Management & Subscription Platform
                     </p>
                     <div className={styles.buttons}>
                         <a className="button button--primary button--lg" href={useBaseUrl('/guides/api-management')}>

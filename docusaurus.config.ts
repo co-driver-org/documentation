@@ -11,6 +11,7 @@ const config: Config = {
   baseUrl: `/${projectName}/`,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: false,
 
   // If you aren't using GitHub pages, you don't need these.
   organizationName, // Usually your GitHub org/user name.
