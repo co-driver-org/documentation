@@ -27,6 +27,9 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        env:
+          GIT_USER: ${{ secrets.GH_TOKEN }}
+          USE_SSH: false
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
