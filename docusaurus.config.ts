@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'API Management Docs',
-  url: 'https://www.codriver.com',
+  url: 'https://co-driver-org.github.io',
   baseUrl: '/docs/',
   projectName: 'documentation',   // Usually your repo name.
   organizationName: 'co-driver-org',   // Usually your GitHub org/user name.
