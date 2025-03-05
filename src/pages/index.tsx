@@ -13,10 +13,10 @@ export default function Home() {
                         API Management & Subscription Platform
                     </p>
                     <div className={styles.buttons}>
-                        <a className="button button--primary button--lg" href={useBaseUrl('/guides/api-management')}>
+                        <a className="button button--primary button--lg" href={useBaseUrl('/docs/guides/api-management')}>
                             Get Started
                         </a>
-                        <a className="button button--secondary button--lg" href={useBaseUrl('/api-reference/authentication')}>
+                        <a className="button button--secondary button--lg" href={useBaseUrl('/docs/api-reference/authentication')}>
                             API Reference
                         </a>
                     </div>
@@ -30,21 +30,21 @@ export default function Home() {
                             <div className="col col--4">
                                 <h2>📖 Guides & Tutorials</h2>
                                 <p>Step-by-step tutorials to help you integrate APIs seamlessly.</p>
-                                <a href={useBaseUrl('/guides/api-management')} className="button button--outline button--primary">
+                                <a href={useBaseUrl('/docs/guides/api-management')} className="button button--outline button--primary">
                                     Read Guides
                                 </a>
                             </div>
                             <div className="col col--4">
                                 <h2>⚡ Quickstarts</h2>
                                 <p>Get up and running quickly with our API quickstart guides.</p>
-                                <a href={useBaseUrl('/quickstarts/getting-started')} className="button button--outline button--primary">
+                                <a href={useBaseUrl('/docs/quickstarts/getting-started')} className="button button--outline button--primary">
                                     Start Now
                                 </a>
                             </div>
                             <div className="col col--4">
                                 <h2>🔍 API Reference</h2>
                                 <p>Explore our API endpoints, authentication, and request examples.</p>
-                                <a href={useBaseUrl('/api-reference/authentication')} className="button button--outline button--primary">
+                                <a href={useBaseUrl('/docs/api-reference/authentication')} className="button button--outline button--primary">
                                     View API Docs
                                 </a>
                             </div>
