@@ -1,9 +1,0 @@
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-co-driver:
-  label: Co-Driver
-  permalink: /co-driver
-  description: Co-driver tag description
