@@ -29,13 +29,10 @@ const config: Config = {
       'classic',
       ({
         docs: {
-//           path: 'docs',
-//           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.ts'),
         },
         blog: {
           showReadingTime: true,
-//           editUrl: 'https://github.com/your-org/docs-platform/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
