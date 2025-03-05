@@ -66,7 +66,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/guides/api-management',
+              to: '/documentation/guides/api-management',
             },
           ],
         },
