@@ -18,39 +18,42 @@ export default function Home() {
                         <a className="button button--primary button--lg" href={useBaseUrl('/docs/guides/api-management')}>
                             Try Now
                         </a>
-                        <a className="button button--outline button--lg" href={useBaseUrl('/docs/api-reference/authentication')}>
+                        <a className="button button--secondary button--lg" href={useBaseUrl('/docs/api-reference/authentication')}>
                             Read Docs
                         </a>
                     </div>
                 </div>
             </header>
 
-            {/* 🔥 WHY CHOOSE US? */}
+            {/* 🌟 WHY CHOOSE US? */}
             <section className={styles.featuresSection}>
                 <div className="container">
                     <h2 className="text--center">Why Choose Co-Driver?</h2>
                     <div className="row">
                         <div className="col col--6">
-                            <div className="icon">📡</div>
-                            <h3>API Discovery & Ownership</h3>
+                            <h3>📡 API Discovery & Ownership</h3>
                             <p>Find and manage APIs across teams effortlessly.</p>
                         </div>
                         <div className="col col--6">
-                            <div className="icon">⚙️</div>
-                            <h3>SDK Automation</h3>
+                            <h3>⚙️ SDK Automation</h3>
                             <p>Generate SDKs in Java, Python, and Node.js instantly.</p>
                         </div>
                     </div>
                     <div className="row">
-                                            <div className="col col--6">
-                                                <h3>📊 API Observability</h3>
-                                                <p>Monitor usage, errors, and performance in real time.</p>
-                                            </div>
-                                            <div className="col col--6">
-                                                <h3>🔑 Subscription Control</h3>
-                                                <p>Manage API access with approval workflows and security.</p>
-                                            </div>
-                                        </div>
+                        <div className="col col--6">
+                            <h3>📊 API Observability</h3>
+                            <p>Monitor usage, errors, and performance in real time.</p>
+                        </div>
+                        <div className="col col--6">
+                            <h3>🔑 Subscription Control</h3>
+                            <p>Manage API access with approval workflows and security.</p>
+                        </div>
+                    </div>
+                    <div className="text--center">
+                        <a href={useBaseUrl('/features')} className="button button--primary">
+                            Learn More
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -74,7 +77,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
         </Layout>
     );
 }
