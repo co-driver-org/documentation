@@ -1,52 +1,36 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-
 const config: Config = {
-  title: 'API Management Docs',
-  url: 'https://co-driver-org.github.io',
-  baseUrl: '/documentation/',
-  projectName: 'documentation',   // Usually your repo name.
-  organizationName: 'co-driver-org',   // Usually your GitHub org/user name.
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+title: 'Co-Driver Docs',
+url: 'https://co-driver-org.github.io',  // ✅ Ensure this is correct
+baseUrl: '/docs/',  // ✅ Ensure this is /docs/ for GitHub Pages
+projectName: 'documentation',
+organizationName: 'co-driver-org',
+trailingSlash: false,
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-
-  presets: [
-    [
-      'classic',
-      ({
-        docs: {
-          path: 'docs', // ✅ Ensure this points to your "docs" folder
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.ts'), // ✅ Ensure this is correct
+presets: [
+[
+'classic',
+{
+docs: {
+path: 'docs',
+routeBasePath: '/',  // ✅ Ensures content is served correctly under /docs/
+sidebarPath: require.resolve('./sidebars.ts'),
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/your-org/docs-platform/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Co-Driver',
       logo: {
         alt: 'Co-Driver Logo',
-        src: 'img/logo.svg',
+        src: '/img/logo.svg',  // ✅ Fix image path
       },
       items: [
         {
@@ -55,56 +39,13 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },  // ✅ Fix relative paths
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/documentation/guides/api-management',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/co-driver',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/nakulshukla08/platform-backend',
-            }
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/nakulshukla08/platform-backend',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Co-Driver, Inc.`,
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-  } satisfies Preset.ThemeConfig,
+  },
 
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
 };
 
 export default config;
