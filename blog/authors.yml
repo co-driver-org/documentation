@@ -1,0 +1,19 @@
+pulin:
+  name: Pulin Kumar
+  title: Co-Driver Maintainer
+  url: https://github.com/Pulin412
+  image_url: https://github.com/Pulin412.png
+  page: true
+  socials:
+    github: Pulin412
+
+nakul:
+  name: Nakul Shukla
+  title: Co-Driver Maintainer
+  url: https://github.com/nakulshukla08
+  image_url: https://github.com/nakulshukla08.png
+  page:
+    # customize the url of the author page at /blog/authors/<permalink>
+    permalink: '/all-sebastien-lorber-articles'
+  socials:
+    github: nakulshukla08
