@@ -9,7 +9,6 @@ const config: Config = {
   title: 'Co-Driver Docs',
   url: 'https://docs.codriver.io',
   baseUrl: '/',
-  url: 'https://docs.codriver.io',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
