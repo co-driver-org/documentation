@@ -7,8 +7,9 @@ const projectName = "documentation";
 
 const config: Config = {
   title: 'Co-Driver Docs',
-  url: `https://${organizationName}.github.io`,
-  baseUrl: `/${projectName}/`,
+  url: 'https://docs.codriver.io',
+  baseUrl: '/',
+  url: 'https://docs.codriver.io',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
