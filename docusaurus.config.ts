@@ -6,7 +6,8 @@ const organizationName = "co-driver-org";
 const projectName = "documentation";
 
 const config: Config = {
-  title: 'Co-Driver Docs',
+  title: 'Co-Driver Developer Portal',
+  tagline: 'Build with Co-Driver APIs',
   url: 'https://docs.codriver.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -31,10 +32,11 @@ const config: Config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
+          routeBasePath: '/',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
-        blog: {
-          showReadingTime: true,
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -45,7 +47,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Co-Driver',
+      title: 'Co-Driver Dev',
       logo: {
         alt: 'Co-Driver Logo',
         src: 'img/logo.svg',
@@ -55,9 +57,23 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docs',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          to: '/api-reference',
+          label: 'API Reference',
+          position: 'left',
+        },
+        {
+          to: '/guides',
+          label: 'Guides',
+          position: 'left',
+        },
+        {
+          to: '/sdk',
+          label: 'SDK',
+          position: 'left',
+        },
         {
           href: `https://github.com/${organizationName}/${projectName}`,
           label: 'GitHub',
@@ -69,11 +85,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/guides/api-management',
+              label: 'Getting Started',
+              to: '/getting-started',
+            },
+            {
+              label: 'API Reference',
+              to: '/api-reference',
+            },
+            {
+              label: 'SDK',
+              to: '/sdk',
             },
           ],
         },
@@ -87,15 +111,23 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/nakulshukla08/platform-backend',
-            }
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/codriver',
+            },
           ],
         },
         {
           title: 'More',
           items: [
             {
+              label: 'Status',
+              href: 'https://status.codriver.io',
+            },
+            {
               label: 'Blog',
-              to: '/blog',
+              href: 'https://blog.codriver.io',
             },
             {
               label: 'GitHub',
@@ -109,9 +141,12 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['bash', 'json', 'yaml'],
+    },
+    search: {
+      provider: 'local',
     },
   } satisfies Preset.ThemeConfig,
-
 };
 
 export default config;
