@@ -4,6 +4,14 @@ const sidebars: SidebarsConfig = {
   docs: [
     {
       type: 'category',
+      label: 'Concepts',
+      collapsed: true,
+      items: [
+        'concepts/api-governance',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Guides & Tutorials',
       collapsed: true,
       items: [

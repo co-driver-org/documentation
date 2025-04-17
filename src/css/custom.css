@@ -6,25 +6,123 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #7c3aed;
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #5b21b6;
+  --ifm-color-primary-darkest: #4c1d95;
+  --ifm-color-primary-light: #8b5cf6;
+  --ifm-color-primary-lighter: #a78bfa;
+  --ifm-color-primary-lightest: #c4b5fd;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.1);
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-color-content: #1a1a1a;
+  --ifm-color-content-secondary: #4a4a4a;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.2);
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #242526;
+  --ifm-color-content: #ffffff;
+  --ifm-color-content-secondary: #e0e0e0;
+}
+
+/* Custom purple theme styles */
+.navbar {
+  --ifm-navbar-background-color: var(--ifm-color-primary);
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-lightest);
+}
+
+.navbar__brand {
+  color: white;
+}
+
+.navbar__items--right .navbar__link {
+  color: white;
+}
+
+.navbar__items--right .navbar__link:hover {
+  color: var(--ifm-color-primary-lightest);
+}
+
+/* Customize code blocks */
+.prism-code {
+  border-radius: 8px;
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* Add subtle purple gradient to hero section */
+.hero {
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-color-primary-light) 100%);
+}
+
+/* Customize buttons */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+/* Main container styles */
+.main-wrapper {
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+}
+
+/* Card and content container styles */
+.card,
+.alert,
+.markdown {
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content);
+}
+
+/* Table styles */
+table {
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content);
+}
+
+/* Footer styles */
+.footer {
+  --ifm-footer-background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content);
+}
+
+/* Text color overrides */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ifm-color-content);
+}
+
+p, li, a:not(.navbar__link) {
+  color: var(--ifm-color-content);
+}
+
+/* Code block text color */
+.prism-code {
+  color: var(--ifm-color-content);
+}
+
+/* Link colors */
+a:not(.navbar__link) {
+  color: var(--ifm-color-primary);
+}
+
+a:not(.navbar__link):hover {
+  color: var(--ifm-color-primary-dark);
 }
