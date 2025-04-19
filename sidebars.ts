@@ -28,6 +28,7 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       items: [
         'quickstarts/getting-started',
+        'quickstarts/environments',
         'quickstarts/setup-mock-server',
         'quickstarts/integrating-sdk',
         'quickstarts/deploying-api',
