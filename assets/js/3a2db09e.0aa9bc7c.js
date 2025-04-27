@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_platform=self.webpackChunkdocs_platform||[]).push([[8121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"Hello","permalink":"/blog/tags/hello","description":"Hello tag description","count":2},{"label":"Co-Driver","permalink":"/blog/tags/co-driver","description":"Co-driver tag description","count":3}]}')}}]);
