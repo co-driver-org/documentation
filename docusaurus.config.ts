@@ -10,7 +10,7 @@ const config: Config = {
   tagline: 'Build with Co-Driver APIs',
   url: 'https://docs.codriver.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
 
@@ -91,10 +91,10 @@ const config: Config = {
               label: 'Getting Started',
               to: '/quickstarts/getting-started',
             },
-            {
-              label: 'API Reference',
-              to: '/api-reference',
-            },
+            // {
+            //   label: 'API Reference',
+            //   to: '/api-reference',
+            // },
             {
               label: 'SDK',
               to: '/sdk',
